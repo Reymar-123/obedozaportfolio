@@ -1,0 +1,976 @@
+.side{
+	width: 100%;
+	height: 6.5vh;
+	background-color: black;
+	color: white;
+	padding: 0 5px;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.closebtn {
+	font-family: arial;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.ako{
+	margin-left: 20%;
+}
+.menu{
+	background: rgba(0,0,0);
+	margin:0;
+	padding: 10px 5px;
+	text-align: right;
+	margin-right: 20px;
+	position: absolute;
+	width: 100%;
+}
+.cnt img{
+	height: 250px;
+	width: 400px;
+	margin-top: 15px;
+}
+body{
+	background-image: url('../images/calenda.jpg');
+	width: 100%;
+	background-size: cover;
+	height: 100vh;
+	overflow: auto;
+}
+.body{
+    float: right;
+    margin-right: 20px;
+    border:2px solid #00f700;;
+    margin-top: 25px;
+    width: 31.62%;
+    height: 86%;
+    background: rgba(0,0,0,0.7);
+    padding: 14px 5px;
+    box-shadow:0px 15px 20px 0px rgba(0,0,0,0.2),0px 25px 30px 0px rgba(0,0,0,0.19);
+}
+.menu .active{
+    background: linear-gradient(0deg,#6dd1ff,#20b7ff);
+    text-decoration: underline solid #00f700;
+}
+.menu a{
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 12px;
+    background: rgba(0,0,0,0.1);
+    font-family: verdana;
+}
+.menu a:hover{
+    background: linear-gradient(0deg,#6dd1ff,#20b7ff);
+    transition:1s;
+    box-shadow: 0 0 10px rgba(32,183,255,1),0 0 20px rgba(32,183,255,1),0 0 100px rgba(32,183,255,0.8);
+}
+.cnt .h1{
+    padding: 0;
+    font-family: Eras Bold ITC;
+    font-size: 30px;
+    margin-top:0px;
+    color: white;
+    background: rgba(0,0,0,0.6);
+    line-height: 1;
+}
+.cnt .h2{
+    margin-top: 0px;
+    color: white;
+    font-size: 20px;
+}
+.cnt button{
+    width: 65%;
+    margin-top:0px;
+    color: white;
+    background: radial-gradient(#5f4b73,#244063,black); 
+    border-color:  white rgba(0,0,0,0.9) ;
+    border-style: solid;
+    padding: 0px 20px;
+    cursor: pointer;
+    transition:0.5s;
+}
+.cnt button:hover{
+    background: linear-gradient(0deg,#6dd1ff,#20b7ff);
+    letter-spacing: 5px;
+    transition:0.5s;
+    box-shadow: 0 0 10px rgba(32,183,255,1),0 0 20px rgba(32,183,255,1),0 0 100px rgba(32,183,255,0.8);
+}
+#web{
+    font-family: Candara;
+    font-size: 20px;
+}
+.cnt a{
+    text-decoration: none;
+}
+body {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+
+.button {
+  text-decoration: none;
+  font-family: "Poppins";
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid rgb(255, 255, 255);
+  transition: 0.2s;
+  border-radius: 5px;
+  background: rgb(255, 255, 255, 0.2);
+}
+
+.button:hover {
+  border-radius: 20px;
+  background-color: skyblue;
+  color: #fff;
+}
+
+
+.january {
+  background-color: transparent;
+  color: white;
+  width: 350px;
+  height: 350px;
+  padding: 0.2rem;
+  border-radius: 0.6rem;
+  position: absolute;
+  top: 40%;
+  left: 9.5%;
+  box-shadow: 2px 0.5px 10px #111;
+}
+
+.week1sun {
+  letter-spacing: 0.025rem;
+  font-size: 1.1rem;
+  color: red;
+}
+.week1 {
+  letter-spacing: 0.025rem;
+  font-size: 1.1rem;
+}
+
+.day1 {
+  text-align: center;
+
+  font-family: "Poppins";
+  font-size: 1rem;
+}
+
+.day1:hover {
+  background-color: skyblue;
+
+  cursor: pointer;
+}
+
+.febuary {
+   background-color: transparent;
+  color: white;
+  width: 350px;
+  height: 350px;
+  padding: 0.2rem;
+  padding-bottom: 52.9px;
+  border-radius: 0.6rem;
+  position: absolute;
+  top: 40%;
+  left: 36.3%;
+  box-shadow: 2px 0.5px 10px #111;
+}
+.week2sun {
+  letter-spacing: 0.025rem;
+  font-size: 1.1rem;
+  color: red;
+}
+.week2 {
+  height: 55.2px;
+  letter-spacing: 0.025rem;
+  font-size: 1.1rem;
+}
+
+.day2 {
+  text-align: center;
+
+  font-family: "Poppins";
+  font-size: 1rem;
+}
+
+.day2:hover {
+  background-color: skyblue;
+
+  cursor: pointer;
+}
+
+.march {
+   background-color: transparent;
+  color: white;
+  width: 350px;
+  height: 350px;
+  padding: 0.2rem;
+  padding-bottom: 52.9px;
+  border-radius: 0.6rem;
+  position: absolute;
+  top: 40%;
+  left: 63.1%;
+  box-shadow: 2px 0.5px 10px #111;
+}
+.week3sun {
+  letter-spacing: 0.025rem;
+  font-size: 1.1rem;
+  color: red;
+}
+.week3 {
+  letter-spacing: 0.025rem;
+  font-size: 1.1rem;
+}
+
+.day3 {
+  text-align: center;
+
+  font-family: "Poppins";
+  font-size: 1rem;
+}
+
+.day3:hover {
+  background-color: skyblue;
+
+  cursor: pointer;
+}
+
+.april {
+   background-color: transparent;
+  color: white;
+  width: 350px;
+  height: 350px;
+  padding: 0.2rem;
+  border-radius: 0.6rem;
+  position: absolute;
+  top: 120%;
+  left: 9.5%;
+  box-shadow: 2px 0.5px 10px #111;
+}
+.week4sun {
+  letter-spacing: 0.025rem;
+  font-size: 1.1rem;
+  color: red;
+}
+.week4 {
+  letter-spacing: 0.025rem;
+  font-size: 1.1rem;
+}
+
+.day4 {
+  text-align: center;
+
+  font-family: "Poppins";
+  font-size: 1rem;
+}
+
+.day4:hover {
+  background-color: skyblue;
+
+  cursor: pointer;
+}
+
+.may {
+   background-color: transparent;
+  width: 350px;
+  height: 350px;
+  padding: 0.2rem;
+  border-radius: 0.6rem;
+  position: absolute;
+  top: 120%;
+  left: 36.3%;
+  box-shadow: 2px 0.5px 10px #111;
+}
+.week5sun {
+  letter-spacing: 0.025rem;
+  font-size: 1.1rem;
+  color: red;
+}
+.week5 {
+  letter-spacing: 0.025rem;
+  font-size: 1.1rem;
+}
+
+.day5 {
+  text-align: center;
+
+  font-family: "Poppins";
+  font-size: 1rem;
+}
+
+.day5:hover {
+  background-color: skyblue;
+
+  cursor: pointer;
+}
+
+.june {
+  background-color: transparent;
+  color: white;
+  width: 350px;
+  height: 350px;
+  padding: 0.2rem;
+  border-radius: 0.6rem;
+  position: absolute;
+  top: 120%;
+  left: 63.1%;
+  box-shadow: 2px 0.5px 10px #111;
+}
+.week6sun {
+  letter-spacing: 0.025rem;
+  font-size: 1.1rem;
+  color: red;
+}
+.week6 {
+  height: 60.2px;
+  letter-spacing: 0.025rem;
+  font-size: 1.1rem;
+}
+
+.day6 {
+  text-align: center;
+
+  font-family: "Poppins";
+  font-size: 1rem;
+}
+
+.day6:hover {
+  background-color: skyblue;
+
+  cursor: pointer;
+}
+
+.july {
+   background-color: transparent;
+  color: white;
+  width: 350px;
+  height: 350px;
+  padding: 0.2rem;
+  border-radius: 0.6rem;
+  position: absolute;
+  top: 200%;
+  left: 9.5%;
+  box-shadow: 2px 0.5px 10px #111;
+}
+.week7sun {
+  letter-spacing: 0.025rem;
+  font-size: 1.1rem;
+  color: red;
+}
+.week7 {
+  letter-spacing: 0.025rem;
+  font-size: 1.1rem;
+}
+
+.day7 {
+  text-align: center;
+
+  font-family: "Poppins";
+  font-size: 1rem;
+}
+
+.day7:hover {
+  background-color: skyblue;
+
+  cursor: pointer;
+}
+
+.august {
+   background-color: transparent;
+  color: white;
+  width: 350px;
+  height: 350px;
+  padding: 0.2rem;
+  border-radius: 0.6rem;
+  position: absolute;
+  top: 200%;
+  left: 36.3%;
+  box-shadow: 2px 0.5px 10px #111;
+}
+.week8sun {
+  letter-spacing: 0.025rem;
+  font-size: 1.1rem;
+  color: red;
+}
+.week8 {
+  letter-spacing: 0.025rem;
+  font-size: 1.1rem;
+}
+
+.day8 {
+  text-align: center;
+
+  font-family: "Poppins";
+  font-size: 1rem;
+}
+
+.day8:hover {
+  background-color: skyblue;
+
+  cursor: pointer;
+}
+
+.september {
+   background-color: transparent;
+  color: white;
+  width: 350px;
+  height: 350px;
+  padding: 0.2rem;
+  border-radius: 0.6rem;
+  position: absolute;
+  top: 200%;
+  left: 63.1%;
+  box-shadow: 2px 0.5px 10px #111;
+}
+.week9sun {
+  letter-spacing: 0.025rem;
+  font-size: 1.1rem;
+  color: red;
+}
+
+.week9 {
+  height: 60.2px;
+  letter-spacing: 0.025rem;
+  font-size: 1.1rem;
+}
+
+.day9 {
+  text-align: center;
+
+  font-family: "Poppins";
+  font-size: 1rem;
+}
+
+.day9:hover {
+  background-color: skyblue;
+
+  cursor: pointer;
+}
+
+.october {
+   background-color: transparent;
+  color: white;
+  width: 350px;
+  height: 350px;
+  padding: 0.2rem;
+  border-radius: 0.6rem;
+  position: absolute;
+  top: 280%;
+  left: 9.5%;
+  box-shadow: 2px 0.5px 10px #111;
+}
+.week10sun {
+  letter-spacing: 0.025rem;
+  font-size: 1.1rem;
+  color: red;
+}
+.week10 {
+  letter-spacing: 0.025rem;
+  font-size: 1.1rem;
+}
+
+.day10 {
+  text-align: center;
+
+  font-family: "Poppins";
+  font-size: 1rem;
+}
+
+.day10:hover {
+  background-color: skyblue;
+
+  cursor: pointer;
+}
+
+.november {
+  background-color: transparent;
+  color: white;
+  width: 350px;
+  height: 350px;
+  padding: 0.2rem;
+  border-radius: 0.6rem;
+  position: absolute;
+  top: 280%;
+  left: 36.3%;
+  box-shadow: 2px 0.5px 10px #111;
+}
+.week11sun {
+  letter-spacing: 0.025rem;
+  font-size: 1.1rem;
+  color: red;
+}
+
+.week11 {
+  letter-spacing: 0.025rem;
+  font-size: 1.1rem;
+}
+
+.day11 {
+  text-align: center;
+
+  font-family: "Poppins";
+  font-size: 1rem;
+}
+
+.day11:hover {
+  background-color: skyblue;
+
+  cursor: pointer;
+}
+
+.december {
+  background-color: transparent;
+  color: white;
+  width: 350px;
+  height: 350px;
+  padding: 0.2rem;
+  border-radius: 0.6rem;
+  position: absolute;
+  top: 280%;
+  left: 63.1%;
+  box-shadow: 2px 0.5px 10px #111;
+}
+.week12sun {
+  letter-spacing: 0.025rem;
+  font-size: 1.1rem;
+  color: red;
+}
+
+.week12 {
+  height: 60.2px;
+  letter-spacing: 0.025rem;
+  font-size: 1.1rem;
+}
+
+.day12 {
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 1rem;
+}
+
+.day12:hover {
+  background-color: skyblue;
+
+  cursor: pointer;
+}
+
+.calendar-text1 {
+  position: absolute;
+  background-color: black;
+  border-radius: 20px;
+  top: 15%;
+  left: 36.5%;
+  margin: 0%;
+  padding: 0 20px;
+  font-family: "Poppins";
+  color: #fff;
+  font-size: 2.5em;
+}
+
+.year {
+  position: absolute;
+  top: 15%;
+  left: 44.5%;
+  margin: 0%;
+  padding: 0 20px;
+  font-family: "Poppins";
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.jan-text1 {
+  position: absolute;
+  background-color: black;
+  border-radius: 20px;
+  top: 30%;
+  left: 13.7%;
+  margin: 0%;
+  padding: 0 20px;
+  font-family: "Poppins";
+  color: #fff;
+  font-size: 2.3em;
+}
+
+.feb-text2 {
+  position: absolute;
+  background-color: black;
+  border-radius: 20px;
+  top: 30%;
+  left: 39.5%;
+  margin: 0%;
+  padding: 0 20px;
+  font-family: "Poppins";
+  color: #fff;
+  font-size: 2.3em;
+}
+
+.mar-text3 {
+  position: absolute;
+  background-color: black;
+  border-radius: 20px;
+  top: 30%;
+  left: 68.2%;
+  margin: 0%;
+  padding: 0 20px;
+  font-family: "Poppins";
+  color: #fff;
+  font-size: 2.3em;
+}
+
+.apr-text4 {
+  position: absolute;
+  background-color: black;
+  border-radius: 20px;
+  top: 110.1%;
+  left: 16.9%;
+  margin: 0%;
+  padding: 0 20px;
+  font-family: "Poppins";
+  color: #fff;
+  font-size: 2.3em;
+}
+
+.may-text5 {
+  position: absolute;
+  background-color: black;
+  border-radius: 20px;
+  top: 110.1%;
+  left: 44%;
+  margin: 0%;
+  padding: 0 20px;
+  font-family: "Poppins";
+  color: #fff;
+  font-size: 2.3em;
+}
+
+.june-text6 {
+  position: absolute;
+  background-color: black;
+  border-radius: 20px;
+  top: 110.1%;
+  left: 69.5%;
+  margin: 0%;
+  padding: 0 20px;
+  font-family: "Poppins";
+  color: #fff;
+  font-size: 2.3em;
+}
+
+.july-text7 {
+  position: absolute;
+  background-color: black;
+  border-radius: 20px;
+  top: 190.1%;
+  left: 17.5%;
+  margin: 0%;
+  padding: 0 20px;
+  font-family: "Poppins";
+  color: #fff;
+  font-size: 2.3em;
+}
+
+.aug-text8 {
+  position: absolute;
+  background-color: black;
+  border-radius: 20px;
+  top: 190.1%;
+  left: 41.8%;
+  margin: 0%;
+  padding: 0 20px;
+  font-family: "Poppins";
+  color: #fff;
+  font-size: 2.3em;
+}
+
+.sep-text9 {
+  position: absolute;
+  background-color: black;
+  border-radius: 20px;
+  top: 190.1%;
+  left: 64.4%;
+  margin: 0%;
+  padding: 0 20px;
+  font-family: "Poppins";
+  color: #fff;
+  font-size: 2.3em;
+}
+
+.oct-text10 {
+  position: absolute;
+  background-color: black;
+  border-radius: 20px;
+  top: 270.1%;
+  left: 13.5%;
+  margin: 0%;
+  padding: 0 20px;
+  font-family: "Poppins";
+  color: #fff;
+  font-size: 2.3em;
+}
+
+.nov-text11 {
+  position: absolute;
+  background-color: black;
+  border-radius: 20px;
+  top: 270.1%;
+  left: 38.6%;
+  margin: 0%;
+  padding: 0 20px;
+  font-family: "Poppins";
+  color: #fff;
+  font-size: 2.3em;
+}
+
+.dec-text12 {
+  position: absolute;
+  background-color: black;
+  border-radius: 20px;
+  top: 270.1%;
+  left: 65.4%;
+  margin: 0%;
+  padding: 0 20px;
+  font-family: "Poppins";
+  color: #fff;
+  font-size: 2.3em;
+}
+
+.jhday1 {
+  text-align: center;
+  color: red; 
+  font-family: "Poppins";
+  font-size: 1rem;
+  background-color: transparent;
+}
+.jhday1:hover {
+ cursor: pointer;
+}
+
+.fhday2 {
+  text-align: center;
+color: red; 
+  font-family: "Poppins";
+  font-size: 1rem;
+  background-color: transparent;
+}
+.fhday2:hover {
+  cursor: pointer;
+}
+
+.ahday4 {
+  text-align: center;
+color: red; 
+  font-family: "Poppins";
+  font-size: 1rem;
+background-color: transparent;
+}
+.ahday4:hover {
+  cursor: pointer;
+}
+
+.mhday5 {
+  text-align: center;
+color: red; 
+  font-family: "Poppins";
+  font-size: 1rem;
+ background-color: transparent;
+}
+.mhday5:hover {
+  cursor: pointer;
+}
+
+.jnhday6 {
+  text-align: center;
+color: red; 
+  font-family: "Poppins";
+  font-size: 1rem;
+ background-color: transparent;
+}
+.jnhday6:hover {
+  cursor: pointer;
+}
+
+.auhday8 {
+  text-align: center;
+color: red; 
+  font-family: "Poppins";
+  font-size: 1rem;
+background-color: transparent;
+}
+.auhday8:hover {
+
+  cursor: pointer;
+}
+
+.nohday11 {
+  text-align: center;
+color: red; 
+  font-family: "Poppins";
+  font-size: 1rem;
+background-color: transparent;
+}
+.nohday11:hover {
+
+  cursor: pointer;
+}
+
+.dehday12 {
+  text-align: center;
+color: red; 
+  font-family: "Poppins";
+  font-size: 1rem;
+background-color: transparent;
+}
+.dehday12:hover {
+
+  cursor: pointer;
+}
+
+.day1 {
+  border: 2px;
+}
+.day1sun{
+    text-align: center;
+    color: red;
+}
+.jhday1 {
+  border: 2px;
+}
+
+.day2 {
+  border: 2px;
+}
+.day2sun{
+    text-align: center;
+    color: red;
+}
+.fhday2 {
+  border: 2px;
+}
+
+.day3 {
+  border: 2px;
+}
+.day3sun{
+    text-align: center;
+    color: red;
+}
+.day4 {
+  border: 2px;
+}
+.day4sun{
+    text-align: center;
+    color: red;
+}
+.ahday4 {
+  border: 2px;
+}
+
+.day5 {
+  border: 2px;
+}
+.day5sun{
+    text-align: center;
+    color: red;
+}
+.mhday5 {
+  border: 2px;
+}
+
+.day6 {
+  border: 2px;
+}
+.day6sun{
+    text-align: center;
+    color: red;
+}
+.jnhday6 {
+  border: 2px;
+}
+
+.day7 {
+  border: 2px;
+}
+.day7sun{
+    text-align: center;
+    color: red;
+}
+.day8 {
+  border: 2px;
+}
+.day8sun{
+    text-align: center;
+    color: red;
+}
+.auhday8 {
+  border: 2px;
+}
+
+.day9 {
+  border: 2px;
+}
+.day9sun{
+    text-align: center;
+    color: red;
+}
+
+.day10 {
+  border: 2px;
+}
+.day10sun{
+    text-align: center;
+    color: red;
+}
+
+.day11 {
+  border: 2px;
+}
+.day11sun{
+    text-align: center;
+    color: red;
+}
+.nohday11 {
+  border: 2px;
+}
+
+.day12 {
+  border: 2px;
+}
+.day12sun{
+    text-align: center;
+    color: red;
+}
+.dehday12 {
+  border: 2px;
+}
