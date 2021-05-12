@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Me | My Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/about.css">
+</head>
+
+<div class="menu">
+  <div class="ako">
+      <a href="index.html">HOME</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="about.html" class="active">ABOUT</a>
+      <a href="project.html">MY PROJECTS & WORKS</a>
+      <a href="education.html">EDUCATION</a>
+    </div>
+  </div>
+
+      <div id="mySidenav" class="sidenav">
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+      <a href="index.html">HOME</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="about.html">ABOUT</a>
+      <a href="project.html">MY PROJECTS & WORKS</a>
+      <a href="education.html">EDUCATION</a>    
+    </div>
+    <div class="side"><span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ Gallery</span></div>
+      <script>
+        function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+        }
+      </script>
+
+
+
+      <div class="resume">
+        <div class="base">
+        <div class="profile">
+        <div class="photo">
+        </div>
+        <div class="info">
+      	<td><img src="images/profile.jpg" height="200px"></td>
+        <h1 class="name">Reymar Obedoza</h2>
+        </div>
+        </div>
+        <div class="about">
+      <h3>About Me</h3>I'm currently second year college taking up Bachelor of Science in Information Technology.
+    </div>
+    <div class="contact">
+      <h3>Contact Me</h3>
+      <div class="call"><i class="fa fa-phone"></i><span>09774035827</span></a></div>
+      <div class="address"><i class="fa fa-thumb-tack"></i><span> Caramutan Villasis, Pangasinan</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="func">
+    <div class="work">
+      <h3><i class="fa fa-user-circle-o"></i>Profile</h3>
+      <ul>
+        <li><span> Birthday <br>July 09, 2001</span><small></small>
+        <li><span> Birthplace <br> Villasis Pangasinan</span><small></small>
+        <li><span> Height : 5"9' <br> Weight: 80kg</span><small></small>
+        <li><span> Religion <br>Roman Catholic</span><small></small>
+        <li><span> Language <br>Ilocano, Tagalog and English</span><small></small>
+        
+      </ul>
+    </div>
+    <div class="edu">
+      <h3><i class="fa fa-graduation-cap"></i>Education</h3>
+      <ul>
+        <li><span>Tertiary Education<br>Bachelor of Science in  Information Technology</span><small> Urdaneta City University</small><small>2019-Present</small></li>
+        <li><span>Secondary Education</span><small>Don Ramon E. Costales Memorial National High School</small><small>2013-2019</small></li>
+        <li><span>Primary Education</span><small>Caramutan Elementary School</small><small> 2006-2013</small></li>
+      </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home | My Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+<div class="menu">
+	<div class="ako" >
+			<a href="index.html" class="active">HOME</a>
+			<a href="gallery.html">GALLERY</a>
+			<a href="about.html">ABOUT</a>
+			<a href="project.html">MY PROJECTS & WORKS</a>
+			<a href="education.html">EDUCATION</a>			
+	</div>
+</div>
+		<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+			  <a href="index.html">HOME</a>
+			<a href="gallery.html">GALLERY</a>
+			<a href="about.html">ABOUT</a>
+			<a href="project.html">MY PROJECTS & WORKS</a>
+			<a href="education.html">EDUCATION</a>				
+		</div>
+		<div class="side"><span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ Home</span></div>
+			<script>
+				function openNav() {
+					    document.getElementById("mySidenav").style.width = "250px";
+				}
+
+				function closeNav() {
+					    document.getElementById("mySidenav").style.width = "0";
+				}
+			</script>
+	<center>
+		<div class="body">
+			<div class="cnt">
+			<center>
+				<img src="images/profile.jpg">
+				<div class="txt"><hr>
+					<p class="h1">Hi! I'm<br><span class="name">Reymar Obedoza</span></p><hr>
+					<p class="h2">WELCOME TO MY PORTFOLIO</p><hr>
+				</div>
+						<a href="https://facebook.com/"><img src="images/facebook.gif" class="icon">
+						<a href="https://twitter.com/"><img src="images/twitter.gif" class="icon">
+						<a href="https://instagram.com/"><img src="images/instagram.gif" class="icon">
+						<a href="https://youtube.com/"><img src="images/youtube.gif" class="icon">
+			</center>
+			</div>
+		</div>
+</center>
+</body>
+</html>
